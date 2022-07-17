@@ -1,5 +1,12 @@
 import { MyComponentProps } from '../types/Props';
 
+/**
+ * 예시
+ * <MyComponent name="애진" />
+ * <MyComponent />
+ * <MyComponent>애징</MyComponent> 
+ */
+
 const MyComponent = ({ name, children }: MyComponentProps) => {
   return (
     <div>
