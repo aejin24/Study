@@ -1,9 +1,9 @@
-import RefExample from "./components/RefExample";
+import StyledComponent from "./components/StyledComponent";
 
 const App = () => {
   return (
     <div>
-      <RefExample />
+      <StyledComponent />
     </div>
   );
 }
