@@ -1,9 +1,9 @@
-import Root from "./routes/Root";
+import RefExample from "./components/RefExample";
 
 const App = () => {
   return (
     <div>
-      <Root />
+      <RefExample />
     </div>
   );
 }

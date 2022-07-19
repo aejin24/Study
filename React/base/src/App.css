@@ -1,7 +1,7 @@
-div {
-  background-color: rgb(162, 127, 243);
-  color: #ffffff;
-  padding: 40px;
-  font-family: 고딕;
-  text-align: center;
+.success {
+  background-color: lightgreen;
+}
+
+.failure {
+  background-color: lightcoral;
 }
