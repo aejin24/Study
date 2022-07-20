@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
-import ErrorBoundaryExample from "./components/ErrorBoundaryExample";
-import Fallback from "./components/Fallback";
+import ErrorBoundaryExample from "./components/errorBoundary/ErrorBoundaryExample";
+import Fallback from "./components/errorBoundary/Fallback";
 
 export default function App() {
   return (
