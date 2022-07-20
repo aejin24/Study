@@ -1,11 +1,16 @@
-import StyledComponent from "./components/StyledComponent";
+import { Suspense } from "react";
+import { ErrorBoundary } from "react-error-boundary";
+import ErrorBoundaryExample from "./components/ErrorBoundaryExample";
+import Fallback from "./components/Fallback";
 
-const App = () => {
+export default function App() {
   return (
     <div>
-      <StyledComponent />
+      <ErrorBoundary FallbackComponent={Fallback}>
+        <Suspense fallback={<div>Loading...</div>}>
+          <ErrorBoundaryExample />
+        </Suspense>
+      </ErrorBoundary>
     </div>
   );
 }
-
-export default App;
