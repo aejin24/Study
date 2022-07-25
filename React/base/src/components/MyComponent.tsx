@@ -1,4 +1,4 @@
-import { MyComponentProps } from '../types/Props';
+import { MyComponentProps } from '@customTypes/Props';
 
 /**
  * 예시

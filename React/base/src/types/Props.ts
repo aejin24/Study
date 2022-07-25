@@ -1,8 +1,4 @@
-type MyComponentProps = {
+export type MyComponentProps = {
   name?: string,
   children?: string
 };
-
-export type {
-  MyComponentProps
-}
