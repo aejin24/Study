@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Box = styled.div<{ color?: string }>`
-  background-color: ${props => props.color || "blue"};
+  background-color: ${(props) => props.color || 'blue'};
   width: 100px;
   height: 100px;
   display: block;
-`
+`;
 
 const CoralContainer = styled(Box)`
   background-color: coral;
@@ -14,11 +14,11 @@ const CoralContainer = styled(Box)`
 const StyledComponent = () => {
   return (
     <>
-      <Box color="black" />
+      <Box color='black' />
 
       <CoralContainer />
 
-      <Box as={"a"} href={"/yeah"}></Box>
+      <Box as={'a'} href={'/yeah'}></Box>
     </>
   );
 };

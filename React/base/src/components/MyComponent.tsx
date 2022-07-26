@@ -4,7 +4,7 @@ import { MyComponentProps } from '@customTypes/Props';
  * 예시
  * <MyComponent name="애진" />
  * <MyComponent />
- * <MyComponent>애징</MyComponent> 
+ * <MyComponent>애징</MyComponent>
  */
 
 const MyComponent = ({ name, children }: MyComponentProps) => {
@@ -16,7 +16,7 @@ const MyComponent = ({ name, children }: MyComponentProps) => {
 };
 
 MyComponent.defaultProps = {
-  name: "기본 이름"
-}
+  name: '기본 이름',
+};
 
 export default MyComponent;

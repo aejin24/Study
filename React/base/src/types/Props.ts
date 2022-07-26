@@ -1,4 +1,4 @@
 export type MyComponentProps = {
-  name?: string,
-  children?: string
+  name?: string;
+  children?: string;
 };

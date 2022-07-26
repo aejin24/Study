@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 const throwError = () => {
-  throw new Error("Something Broken");
-}
+  throw new Error('Something Broken');
+};
 
 export default function ErrorBoundaryExample() {
   const [error, setError] = useState(false);
