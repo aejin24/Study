@@ -1,0 +1,39 @@
+@use "./color.scss";
+
+.bg {
+  background-color: $BLACK;
+  color: $WHITE;
+
+  &:hover {
+    color: $GREEN;
+  }
+
+  &::after {
+    color: $YELLOW;
+  }
+
+  &.color,
+  &#color2,
+  &[id="text"] {
+    color: $BLUE;
+  }
+}
+
+.latte {
+  .cappuccino & {
+    //접미사로 사용된 예시
+    font: {
+      size: 11px;
+      weight: 700;
+    }
+  }
+}
+
+.give_me_a {
+  &-espresso {
+    color: $RED;
+  }
+  .please &-americano {
+    color: $ORANGE;
+  }
+}
