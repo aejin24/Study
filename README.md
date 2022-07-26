@@ -1,7 +1,5 @@
 ## Applying Code Convention
 
----
-
 <b>** tool - visual studio code **</b>
 
 ### 1. Prettier
