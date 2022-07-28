@@ -1,16 +1,5 @@
-import { Suspense } from "react";
-import { ErrorBoundary } from "react-error-boundary";
-import ErrorBoundaryExample from "@components/errorBoundary/ErrorBoundaryExample";
-import Fallback from "@components/errorBoundary/Fallback";
+import EffectExample from "@components/hooks/EffectExample";
 
 export default function App() {
-  return (
-    <div>
-      <ErrorBoundary FallbackComponent={Fallback}>
-        <Suspense fallback={<div>Loading...</div>}>
-          <ErrorBoundaryExample />
-        </Suspense>
-      </ErrorBoundary>
-    </div>
-  );
+  return <EffectExample />;
 }

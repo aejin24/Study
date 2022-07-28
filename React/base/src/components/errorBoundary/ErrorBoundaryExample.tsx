@@ -1,5 +1,13 @@
 import { useEffect, useState } from "react";
 
+/**
+  <ErrorBoundary FallbackComponent={Fallback}>
+    <Suspense fallback={<div>Loading...</div>}>
+      <ErrorBoundaryExample />
+    </Suspense>
+  </ErrorBoundary>
+ */
+
 const throwError = () => {
   throw new Error("Something Broken");
 };
