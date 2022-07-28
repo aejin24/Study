@@ -19,7 +19,7 @@
   },
   "rules": {
     "arrow-body-style": "off",
-    "semi": ["warn", "never"],
+    "semi": ["error", "always"],
     "react/function-component-definition": ["warn", { "namedComponents": "function-declaration" }],
     "react/jsx-one-expression-per-line": "off",
     "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
@@ -40,11 +40,10 @@
         "devDependencies": [".storybook/**", "src/stories/**"]
       }
     ],
-    // "max-lines": ["warn", 150],
+    "max-lines": ["warn", 150],
     "no-param-reassign": ["error", { "props": false }],
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": ["error"],
-
     "no-shadow": "off",
     "no-unused-expressions": ["warn"],
     "@typescript-eslint/no-shadow": ["error"],
