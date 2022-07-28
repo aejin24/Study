@@ -1,9 +1,9 @@
-import '../App.module.css';
+import "../App.module.css";
 
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState } from "react";
 
-const RefExample = (): JSX.Element => {
-  const [value, setValue] = useState<string>('');
+function RefExample(): JSX.Element {
+  const [value, setValue] = useState<string>("");
   const [validate, setValidate] = useState<boolean>(false);
 
   const inputRef = useRef<HTMLInputElement>(null);
@@ -13,7 +13,7 @@ const RefExample = (): JSX.Element => {
   };
 
   const onhandleClick = () => {
-    setValidate(value === '0000');
+    setValidate(value === "0000");
 
     inputRef.current?.focus();
   };
@@ -21,15 +21,17 @@ const RefExample = (): JSX.Element => {
   return (
     <div>
       <input
-        type='password'
+        type="password"
         value={value}
         onChange={onhandleChange}
         ref={inputRef}
-        className={validate ? 'success' : 'failure'}
+        className={validate ? "success" : "failure"}
       />
-      <button onClick={onhandleClick}>검증하기</button>
+      <button type="button" onClick={onhandleClick}>
+        검증하기
+      </button>
     </div>
   );
-};
+}
 
 export default RefExample;

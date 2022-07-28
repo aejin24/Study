@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom";
-import { Route, Routes } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 
-const Root = (): JSX.Element => {
+function Root(): JSX.Element {
   return (
     <>
       <ul>
@@ -22,18 +21,18 @@ const Root = (): JSX.Element => {
       </Routes>
     </>
   );
-};
+}
 
-const Home = () => {
+function Home() {
   return <h2>Home</h2>;
-};
+}
 
-const Profile = () => {
+function Profile() {
   return <h2>Profile</h2>;
-};
+}
 
-const Error = () => {
+function Error() {
   return <h2>404</h2>;
-};
+}
 
 export default Root;

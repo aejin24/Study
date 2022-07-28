@@ -20,7 +20,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start:scss": "sass --style=compressed --watch src/scss:src/css --no-source-map",
+    "start:scss": "sass --style=expanded --watch src/scss:src/css --no-source-map",
     "build:scss": "sass --style=compressed src/scss:src/css --no-source-map",
     "start": "react-app-rewired start",
     "build": "npm run build:sass && react-app-rewired build",

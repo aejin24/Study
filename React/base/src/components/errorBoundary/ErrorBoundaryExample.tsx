@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 const throwError = () => {
-  throw new Error('Something Broken');
+  throw new Error("Something Broken");
 };
 
 export default function ErrorBoundaryExample() {
@@ -15,7 +15,9 @@ export default function ErrorBoundaryExample() {
 
   return (
     <div>
-      <button onClick={throwErrorInRender}>에러 만들기</button>
+      <button type="button" onClick={throwErrorInRender}>
+        에러 만들기
+      </button>
     </div>
   );
 }
