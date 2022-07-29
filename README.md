@@ -31,3 +31,18 @@
   "source.fixAll.eslint": true
 }
 ```
+
+<br>
+
+### 3. Stylelint (Only Scss)
+
+#### 3-1) Modify settings.json
+
+```json
+"editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.stylelint": true
+},
+"stylelint.enable": true,
+"stylelint.validate": ["css", "less", "postcss", "scss"]
+```
