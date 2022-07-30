@@ -36,7 +36,11 @@
 
 ### 3. Stylelint (Only Scss)
 
-#### 3-1) Modify settings.json
+### 3-1) Install Stylelint Extension
+
+<img src="https://user-images.githubusercontent.com/76193042/181870535-77ff7906-fc20-4711-9c55-0ad20cdd344e.png" width="450px">
+
+#### 3-2) Modify settings.json
 
 ```json
 "editor.codeActionsOnSave": {
